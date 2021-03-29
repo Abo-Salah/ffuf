@@ -25,7 +25,6 @@ type SimpleRunner struct {
 	config *ffuf.Config
 	client *http.Client
 }
-
 func NewSimpleRunner(conf *ffuf.Config, replay bool) ffuf.RunnerProvider {
 	var simplerunner SimpleRunner
 	proxyURL := http.ProxyFromEnvironment
@@ -145,7 +144,7 @@ func (r *SimpleRunner) Execute(req *ffuf.Request) (ffuf.Response, error) {
 		resp.Request.Raw = string(rawreq)
 		resp.Raw = string(rawresp)
 	}
-
+        resp.PageTitle := "D3f"
 	if respbody, err := ioutil.ReadAll(httpresp.Body); err == nil {
 		resp.ContentLength = int64(utf8.RuneCountInString(string(respbody)))
 		resp.Data = respbody
