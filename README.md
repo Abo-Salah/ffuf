@@ -11,9 +11,9 @@
 
 A fast web fuzzer written in Go.
 
-- [Installation](https://github.com/ffuf/ffuf#installation)
-- [Example usage](https://github.com/ffuf/ffuf#example-usage)
-    - [Content discovery](https://github.com/ffuf/ffuf#typical-directory-discovery)
+- [Installation](https://github.com/Abo-Salah/ffuf#installation)
+- [Example usage](https://github.com/Abo-Salah/ffuf#example-usage)
+    - [Content discovery](https://github.com/Abo-Salah/ffuf#typical-directory-discovery)
     - [Vhost discovery](https://github.com/ffuf/ffuf#virtual-host-discovery-without-dns-records)
     - [Parameter fuzzing](https://github.com/ffuf/ffuf#get-parameter-fuzzing)
     - [POST data fuzzing](https://github.com/ffuf/ffuf#post-data-fuzzing)
@@ -38,13 +38,13 @@ Come to hang out & to discuss about ffuf, it's usage and development!
 
 ## Installation
 
-- [Download](https://github.com/ffuf/ffuf/releases/latest) a prebuilt binary from [releases page](https://github.com/ffuf/ffuf/releases/latest), unpack and run!
+- [Download](https://github.com/Abo-Salah/ffuf/releases/latest) a prebuilt binary from [releases page](https://github.com/Abo-Salah/ffuf/releases/latest), unpack and run!
   
   _or_
-- If you have recent go compiler installed: `go get -u github.com/ffuf/ffuf` (the same command works for updating)
+- If you have recent go compiler installed: `go get -u github.com/Abo-Salah/ffuf` (the same command works for updating)
   
   _or_
-- git clone https://github.com/ffuf/ffuf ; cd ffuf ; go get ; go build 
+- git clone https://github.com/Abo-Salah/ffuf ; cd ffuf ; go get ; go build 
 
 Ffuf depends on Go 1.13 or greater.
 
