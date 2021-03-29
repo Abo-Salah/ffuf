@@ -150,7 +150,7 @@ func (r *SimpleRunner) Execute(req *ffuf.Request) (ffuf.Response, error) {
 		resp.ContentLength = int64(utf8.RuneCountInString(string(respbody)))
 		resp.Data = respbody
 			if title, ok := GetHtmlTitle(httpresp.Body); ok {
-				PageTitle := (title)
+				resp.PageTitle := (title)
 			} 
 	}
 	wordsSize := len(strings.Split(string(resp.Data), " "))
