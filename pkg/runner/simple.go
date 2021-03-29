@@ -149,8 +149,10 @@ func (r *SimpleRunner) Execute(req *ffuf.Request) (ffuf.Response, error) {
 	if respbody, err := ioutil.ReadAll(httpresp.Body); err == nil {
 		resp.ContentLength = int64(utf8.RuneCountInString(string(respbody)))
 		resp.Data = respbody
+			if title, ok := GetHtmlTitle(resp.Body); ok {
+				PageTitle := (title)
+			} 
 	}
-
 	wordsSize := len(strings.Split(string(resp.Data), " "))
 	linesSize := len(strings.Split(string(resp.Data), "\n"))
 	resp.ContentWords = int64(wordsSize)
